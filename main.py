@@ -1,27 +1,16 @@
-def begruessen_benutzer(name: str) -> str:
+def greet_user_in_german():
     """
-    Erstellt eine personalisierte Begrüßungsnachricht auf Deutsch.
-
-    Args:
-        name (str): Der Name des zu begrüßenden Benutzers.
-
-    Returns:
-        str: Eine Begrüßungsnachricht im Format "Hallo [Name]!".
+    Begrüßt den Benutzer auf Deutsch, nachdem der Name abgefragt wurde.
+    Alle Systemmeldungen sind in deutscher Sprache.
     """
-    return f"Hallo {name}!"
+    # Systemmeldung zur Abfrage des Namens (Deutsch)
+    user_name = input("Bitte geben Sie Ihren Namen ein: ")
+
+    # Begrüßungstext (Deutsch)
+    greeting_message = f"Hallo, {user_name}!"
+
+    # Ausgabe der Begrüßung (Deutsch)
+    print(greeting_message)
 
 if __name__ == "__main__":
-    # Systemnachrichten müssen auf Deutsch sein.
-    print("Willkommen zur Benutzerbegrüßungsfunktion.")
-
-    # Aufforderung zur Eingabe des Namens (Systemnachricht)
-    benutzername_eingabe = input("Bitte geben Sie Ihren Namen ein: ")
-
-    # Erzeugen der Begrüßungsnachricht
-    begruessung = begruessen_benutzer(benutzername_eingabe)
-
-    # Ausgabe der Begrüßungsnachricht (Systemnachricht)
-    print(begruessung)
-
-    # Abschlussnachricht (Systemnachricht)
-    print("Vielen Dank für die Nutzung. Auf Wiedersehen!")
+    greet_user_in_german()
